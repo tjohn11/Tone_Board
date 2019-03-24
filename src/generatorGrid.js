@@ -3,7 +3,7 @@ import GeneratorBlock from './GeneratorBlock';
 
 const generatorGridStyles = {
     height: "100%",
-    width: "65%",
+    width: "auto",
     backgroundColor: "dark gray"
 };
 
