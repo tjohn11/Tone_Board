@@ -1,12 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import Header from './header';
+import MiddleContainer from './middleContainer';
+import Mixer from './Mixer';
 
-ReactDOM.render(<App />, document.getElementById('root'));
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const appStyles = {
+    backgroundColor: "teal"
+};
+
+const App = () => {
+    return (
+        <div className="ui" style={appStyles}>
+            <Header/>
+            <MiddleContainer/>
+        </div>
+    );
+};
+
+ReactDOM.render(<App/>, document.querySelector('#root'));
