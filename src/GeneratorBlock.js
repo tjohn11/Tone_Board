@@ -5,24 +5,66 @@ import './styles/App.css';
 
 class GeneratorBlock extends Component {
 
-    renderContent() {
-        return(
-            <div className='generatorBlock'>
-
-            </div>
-        );
+    constructor(props) {
+       super(props);
+       this.state = {
+           clicked: false,
+           selected: undefined
+       }
     }
 
+    addGenBtn() {
+        this.state.clicked = true;
+    }
+
+
+
     render() {
-        return (
-                <a
-                    className='generatorBlock waves-effect btn'
-                    onClick={() => {alert("button test");}}>
-                    <i className='material-icons'>
-                        add
-                    </i>
-                </a>
-        );
+
+        if (this.state.clicked === false) {
+            return (
+                <div className='generatorBlock'>
+                    <a
+                        className='addGenBtn waves-effect btn'
+                        onClick={() => {
+                            alert(this.state.clicked);
+                        }}>
+                        <i className='large material-icons'>
+                            add
+                        </i>
+                    </a>
+                </div>
+                );
+        }
+
+        else {
+            switch (this.state.selected) {
+
+                case 'gen1': {
+
+                }
+                case 'gen2': {
+
+                }
+                case 'gen3': {
+
+                }
+
+                //show selector buttons here
+                default: {
+                    return (
+                        <a  className='generatorBlock waves-effect btn'
+                            onClick={() => {
+                                alert(this.state.clicked);
+                            }}>
+                            <i className='material-icons'>
+                                add
+                            </i>
+                        </a>
+                    );
+                }
+            }
+        }
     }
 }
 
