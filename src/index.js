@@ -1,21 +1,24 @@
-import React from 'react';
+import React, { Component } from 'react';
+import 'materialize-css/dist/css/materialize.min.css';
 import ReactDOM from 'react-dom';
-import Header from './header';
-import MiddleContainer from './middleContainer';
+import './styles/Reset.css';
+import './styles/App.css';
+import Header from './Header';
+import MiddleContainer from './MiddleContainer';
 import Mixer from './Mixer';
 
 
-const appStyles = {
-    backgroundColor: "teal"
-};
+class App extends Component {
 
-const App = () => {
-    return (
-        <div className="ui" style={appStyles}>
-            <Header/>
-            <MiddleContainer/>
-        </div>
-    );
-};
+    render() {
+        return (
+         <div id='appContainer'>
+             <Header/>
+             <MiddleContainer/>
+         </div>
+        );
+    }
+}
+
 
 ReactDOM.render(<App/>, document.querySelector('#root'));

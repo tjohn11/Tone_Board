@@ -1,15 +1,27 @@
 import React, { Component } from 'react';
+import './styles/Reset.css';
+import './styles/App.css';
 
-const BlockStyles = {
-    backgroundColor: "dark orange",
-};
 
 class GeneratorBlock extends Component {
 
+    renderContent() {
+        return(
+            <div className='generatorBlock'>
+
+            </div>
+        );
+    }
+
     render() {
         return (
-            <div className="ui button active" style={BlockStyles}>
-            </div>
+                <a
+                    className='generatorBlock waves-effect btn'
+                    onClick={() => {alert("button test");}}>
+                    <i className='material-icons'>
+                        add
+                    </i>
+                </a>
         );
     }
 }

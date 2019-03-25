@@ -1,0 +1,105 @@
+
+/*Root Container Styles*/
+body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #202123;
+    color: white;
+    font-size: 16px;
+}
+
+#root {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+    /*Top level container for app*/
+#appContainer {
+    height: 100%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+/*Header Section Styles Section*/
+#header {
+    height: 75px;
+    width: 100%;
+    align-items: center;
+    background-color:#3c4351;
+}
+
+#title {
+
+    font-size: 3rem;
+    margin: .5rem 1%;
+}
+
+.nav-wrapper {
+    display: flex;
+    height: 75px;
+    align-items: center;
+}
+
+/*Main Content Styles Section*/
+#middleContainer {
+    height: 600px;
+    width: 100%;
+    display: flex;
+    background-color: #54585e;
+}
+
+    /*PresetList Styles Section*/
+#presetList {
+    height: 100%;
+    width: 35%;
+    overflow-y: scroll;
+
+}
+
+
+    /*Generator Styles Section*/
+#generatorContainer {
+    height: 100%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+
+.btn.visited {
+    color: whitesmoke;
+}
+
+.btn.hover{
+    color: whitesmoke;
+}
+
+        /*GeneratorBlock Styles Section*/
+.generatorBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: skyblue;
+}
+
+        /*Button to add a new Generator*/
+.addGenBtn {
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Mixer Styles Section*/
+#mixer {
+
+}
