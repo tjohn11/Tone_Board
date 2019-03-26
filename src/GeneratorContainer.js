@@ -20,25 +20,6 @@ class GeneratorContainer extends Component{
                         <GeneratorBlock/>
                     </div>
 
-                    <div className='col z-depth-2'
-                         style={{height: '100%', width: '160px', padding: '.05rem .05rem'}}>
-                        <GeneratorBlock/>
-                    </div>
-
-                    <div className='col z-depth-2'
-                         style={{height: '100%', width: '160px', padding: '.05rem .05rem'}}>
-                        <GeneratorBlock/>
-                    </div>
-
-                    <div className='col z-depth-2'
-                         style={{height: '100%', width: '160px', padding: '.05rem .05rem'}}>
-                        <GeneratorBlock/>
-                    </div>
-
-                    <div className='col z-depth-2'
-                         style={{height: '100%', width: '160px', padding: '.05rem .05rem'}}>
-                        <GeneratorBlock/>
-                    </div>
                 </div>
             </div>
         );

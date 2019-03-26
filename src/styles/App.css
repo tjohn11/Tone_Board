@@ -7,6 +7,7 @@ body {
     background-color: #202123;
     color: white;
     font-size: 16px;
+    font-family: sans-serif;
 }
 
 #root {
@@ -26,14 +27,6 @@ body {
 
 }
 
-
-/*Header Section Styles Section*/
-#header {
-    height: 75px;
-    width: 100%;
-    align-items: center;
-    background-color:#3c4351;
-}
 
 #title {
 
@@ -58,9 +51,12 @@ body {
     /*PresetList Styles Section*/
 #presetList {
     height: 100%;
-    width: 35%;
-    overflow-y: scroll;
+    width: 20%;
+    margin-right: 2%;
+}
 
+.collection {
+    border: 1px solid #202123;
 }
 
 
@@ -74,22 +70,19 @@ body {
 }
 
 
-.btn.visited {
-    color: whitesmoke;
-}
-
-.btn.hover{
-    color: whitesmoke;
-}
-
         /*GeneratorBlock Styles Section*/
 .generatorBlock {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    background-color: skyblue;
+    background-color: #4f5051;
+}
+
+.btn:hover {
+    background-color: #757575 !important;
 }
 
         /*Button to add a new Generator*/
@@ -100,7 +93,20 @@ body {
     justify-content: center;
     align-items: center;
     padding: 0;
+    background-color: #4f5051;
 }
+
+.addOscBtn, .addEnvBtn {
+    width: 90%;
+    height: 40%;
+    font-size: 1rem;
+    background-color: dimgrey;
+}
+
+.addOscBtn:focus {
+    background-color: whitesmoke;
+}
+
 
 
 /*Mixer Styles Section*/
