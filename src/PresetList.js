@@ -14,6 +14,14 @@ class PresetList extends Component {
                 <a href="#" className='collection-item'>Preset</a>
                 <a href="#" className='collection-item'>Preset</a>
                 <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
+                <a href="#" className='collection-item'>Preset</a>
             </div>
         );
     }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './styles/Reset.css';
 import './styles/App.css';
 import GeneratorSelector from './generatorSelector';
+import Dial from './GenericDial';
 
 
 class GeneratorBlock extends Component {
@@ -68,8 +69,16 @@ class GeneratorBlock extends Component {
 
             case 'osc': {
                 return (
-                    <div className='generatorBlock' style={{backgroundColor: 'red'}}>
-
+                    <div className='generatorBlock'>
+                        <Dial
+                            size={50}
+                            numTicks={125}
+                            degrees={260}
+                            min={1}
+                            max={100}
+                            value={30}
+                            onChange={() => {}}
+                        />
                     </div>
                 );
             }
@@ -115,5 +124,6 @@ class GeneratorBlock extends Component {
         }
     }
 }
+
 
 export default GeneratorBlock;
