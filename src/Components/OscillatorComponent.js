@@ -1,7 +1,24 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: Oscillator.js
+
+Oscillator.js contains component definition for the Oscillator component.
+Oscillators reside inside GridBlock tiles and will render when a user has
+chosen to add an envelope to their synthesizer board.
+
+Oscillator has state to contain frequency knob value
+Oscillator does not take any props
+Oscillator passes function renderKnob1Val() to update frequency knob value state
+as props to Dial as renderValue().
+*/
+
+
 import React, { Component } from 'react';
-import LimitedKnob from './GenericDial';
+import GenericDial from './GenericDial';
 import '../styles/Reset.css';
 import '../styles/Oscillator.css';
+
 
 class Oscillator extends Component {
 
@@ -25,7 +42,7 @@ class Oscillator extends Component {
         return (
             <div className='oscillator'>
                 <div className='knobSection'>
-                    <LimitedKnob
+                    <GenericDial
                         style={{ display: "inline-block" }}
                         min={0}
                         max={100}

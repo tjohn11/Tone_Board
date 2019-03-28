@@ -12,7 +12,7 @@ min value
 max value
 precision drag set (unlockDistance)
 start value (value)
-To render dial value to ui pass render function in parent as prop renderValue
+To render dial value to ui pass render function in parent as prop renderValue()
 */
 
 import React, { Component } from 'react';
