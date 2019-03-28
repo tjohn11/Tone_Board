@@ -42,6 +42,7 @@ class Oscillator extends Component {
         return (
             <div className='oscillator'>
                 <div className='knobSection'>
+                    <span style={{display: 'block', marginBottom: '.5rem'}}>Frequency</span>
                     <GenericDial
                         style={{ display: "inline-block" }}
                         min={0}

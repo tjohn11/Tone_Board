@@ -17,10 +17,12 @@ See OscillatorComponent.js for component definition.
 }
 
 .knobSection {
-    height: 50%;
+    height: 65%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     margin: .25rem .5rem;
 }
 
@@ -29,4 +31,5 @@ See OscillatorComponent.js for component definition.
     justify-content: center;
     align-items: flex-start;
     font-size: 1rem;
+    margin-top: .5rem;
 }
