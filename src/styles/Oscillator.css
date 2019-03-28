@@ -1,0 +1,32 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: Oscillator.css
+
+Oscillator.css contains component styles for the GenericDial component.
+See OscillatorComponent.js for component definition.
+
+*/
+
+
+
+.oscillator {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.knobSection {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: .25rem .5rem;
+}
+
+.knobValue {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 1rem;
+}

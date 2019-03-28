@@ -1,0 +1,22 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: Header.css
+
+Header.css contains component styles for the Envelope component.
+See Header.js for component definition.
+*/
+
+
+/*id to target page logo*/
+#title {
+    font-size: 3rem;
+    margin: .5rem 1%;
+}
+
+/*custom styles to materialize nav bar*/
+.nav-wrapper {
+    display: flex;
+    height: 75px;
+    align-items: center;
+}

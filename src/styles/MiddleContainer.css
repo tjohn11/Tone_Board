@@ -1,0 +1,15 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: MiddleContainer.css
+
+MiddleContainer.css contains component styles for the Envelope component.
+See MiddleContainer.js for component definition.
+*/
+
+
+/*Main Content Styles Section*/
+#middleContainer {
+    height: 700px;
+    display: flex;
+}

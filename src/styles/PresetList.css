@@ -1,0 +1,38 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: PresetList.css
+
+PresetList.css contains component styles for the Envelope component.
+See PresetList.js for component definition.
+*/
+
+
+/*PresetList Styles Section*/
+#presetList {
+    height: 100%;
+    width: 25%;
+    margin-right: 2%;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+}
+
+/*hides preset list scrollbar*/
+#presetList::-webkit-scrollbar {
+    width: 0 !important;
+}
+
+/*custom color to materialize border*/
+.collection {
+    border: 1px solid #202123;
+}
+
+/*custom coloring and sizing of materialize collection items*/
+/*the editor will tell you to put a comma after .collection... it lies this will break the ui*/
+.collection
+a.collection-item {
+    height: 10%;
+    color: dimgrey;
+    display: flex;
+    align-items: center;
+}

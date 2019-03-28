@@ -3,9 +3,9 @@ import 'materialize-css/dist/css/materialize.min.css';
 import ReactDOM from 'react-dom';
 import './styles/Reset.css';
 import './styles/App.css';
-import Header from './Header';
-import MiddleContainer from './MiddleContainer';
-import Mixer from './Mixer';
+import Header from './Components/Header';
+import MiddleContainer from './Components/MiddleContainer';
+import Mixer from './Components/Mixer';
 
 
 class App extends Component {

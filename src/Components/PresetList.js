@@ -1,6 +1,17 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: PresetList.js
+
+PresetList.js is contains definition for PresetList component.
+
+PresetList.js does not currently have any state or take/pass any props
+*/
+
+
 import React, { Component } from 'react';
-import './styles/Reset.css';
-import './styles/App.css';
+import '../styles/Reset.css';
+import '../styles/PresetList.css';
 
 
 class PresetList extends Component {

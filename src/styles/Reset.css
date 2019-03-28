@@ -1,3 +1,17 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: Reset.css
+
+Reset.css contains component style resets on most typical elements.
+This allows for more flexibility with manually styling components.
+Any elements with unwanted out of the box styling should be overridden
+in here.
+*/
+
+
+
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -15,7 +29,6 @@ time, mark, audio, video {
     padding: 0;
     border: 0;
     font-size: 100%;
-    font: inherit;
     vertical-align: baseline;
 }
 

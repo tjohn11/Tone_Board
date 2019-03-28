@@ -1,0 +1,29 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: GridContainer.css
+
+GridContainer.css contains component styles for the Envelope component.
+See GridContainer.js for component definition.
+*/
+
+
+
+/*Generator Styles Section*/
+#gridContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #54585e;
+    padding-top: .5%;
+    padding-left: .5%;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-none;
+}
+
+/*hide grid container overflow scroll*/
+#gridContainer::-webkit-scrollbar {
+    width: 0 !important;
+}

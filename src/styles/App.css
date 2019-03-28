@@ -1,3 +1,12 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: App.css
+
+App.css contains root element and App component styles.
+See App.js for component definition.
+*/
+
 
 /*Root Container Styles*/
 body {
@@ -8,8 +17,10 @@ body {
     color: white;
     font-size: 16px;
     font-family: sans-serif;
+    overflow-y: scroll;
 }
 
+/*Targets root element that React app replaces*/
 #root {
     width: 100%;
     height: 100%;
@@ -17,8 +28,7 @@ body {
     justify-content: center;
 }
 
-
-    /*Top level container for app*/
+/*Top level container for app*/
 #appContainer {
     height: 100%;
     width: 90%;
@@ -28,105 +38,13 @@ body {
 }
 
 
-#title {
-
-    font-size: 3rem;
-    margin: .5rem 1%;
-}
-
-.nav-wrapper {
-    display: flex;
-    height: 75px;
-    align-items: center;
-}
-
-/*Main Content Styles Section*/
-#middleContainer {
-    height: 600px;
-    width: 100%;
-    display: flex;
-    background-color: #54585e;
-}
-
-    /*PresetList Styles Section*/
-#presetList {
-    height: 100%;
-    width: 25%;
-    margin-right: 2%;
-    overflow-y: scroll;
-}
-
-#presetList::-webkit-scrollbar {
-    width: 0 !important;
-}
-
-#presetList {
-    overflow: -moz-scrollbars-none;
-}
-
-.collection {
-    border: 1px solid #202123;
-}
-
-.collection
-a.collection-item {
-    height: 10%;
-    color: dimgrey;
-    display: flex;
-    align-items: center;
-}
-
-
-    /*Generator Styles Section*/
-#generatorContainer {
-    height: 100%;
-    width: 65%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-
-        /*GeneratorBlock Styles Section*/
-.generatorBlock {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #4f5051;
-}
-
-.btn:hover {
-    background-color: #757575 !important;
-}
-
-        /*Button to add a new Generator*/
-.addGenBtn {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    background-color: #4f5051;
-}
-
-.addOscBtn, .addEnvBtn {
-    width: 90%;
-    height: 40%;
-    font-size: 1rem;
-    background-color: dimgrey;
-}
-
-.addOscBtn:focus {
-    background-color: whitesmoke;
-}
 
 
 
-/*Mixer Styles Section*/
-#mixer {
 
-}
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: GridBlock.css
+
+GridBlock.css contains component styles for the Envelope component.
+See GridBlock.js for component definition.
+*/
+
+
+/*grid block style definition*/
+.gridBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #4f5051;
+}
+
+/*custom hover color for materialize btn*/
+.btn:hover {
+    background-color: #757575 !important;
+}
+
+/*button overlaying next grid block*/
+.addGridBlockBtn {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #4f5051;
+}
+
+.addOscBtn, .addEnvBtn {
+    width: 80%;
+    height: 37%;
+    font-size: 1rem;
+    background-color: dimgrey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.addOscBtn:focus {
+    background-color: whitesmoke;
+}
