@@ -27,3 +27,9 @@ See GridContainer.js for component definition.
 #gridContainer::-webkit-scrollbar {
     width: 0 !important;
 }
+
+@media only screen and (max-width: 600px) {
+    #gridContainer {
+        width: 50%;
+    }
+}

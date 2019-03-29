@@ -18,9 +18,11 @@ import GridContainer from './GridContainer';
 
 
 class MiddleContainer extends Component{
+
     render() {
+
         return (
-            <div id='middleContainer'>
+            <div ref={this.componentDidMount} id='middleContainer'>
                 <PresetList/>
                 <GridContainer/>
             </div>

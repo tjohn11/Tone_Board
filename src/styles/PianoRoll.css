@@ -1,0 +1,30 @@
+/*
+Project: Tone_Board
+Author: Trevor Johnson
+File Name: PianoRoll.css
+
+PresetList.css contains component styles for the PianoRoll component.
+See PianoRoll.js for component definition.
+*/
+
+
+.ReactPiano__Keyboard {
+}
+
+.pianoContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+    overflow-x: hidden;
+}
+
+.keyboardTitle {
+    font-size: 3.0rem;
+    color: whitesmoke;
+    margin: 1.25rem 0;
+    text-align: center;
+}
+

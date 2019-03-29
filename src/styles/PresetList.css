@@ -3,7 +3,7 @@ Project: Tone_Board
 Author: Trevor Johnson
 File Name: PresetList.css
 
-PresetList.css contains component styles for the Envelope component.
+PresetList.css contains component styles for the PresetList component.
 See PresetList.js for component definition.
 */
 
@@ -20,6 +20,12 @@ See PresetList.js for component definition.
 /*hides preset list scrollbar*/
 #presetList::-webkit-scrollbar {
     width: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    #presetList {
+        width: 50%;
+    }
 }
 
 /*custom color to materialize border*/

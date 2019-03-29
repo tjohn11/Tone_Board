@@ -10,6 +10,6 @@ See MiddleContainer.js for component definition.
 
 /*Main Content Styles Section*/
 #middleContainer {
-    height: 700px;
+    height: 400px;
     display: flex;
 }

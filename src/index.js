@@ -20,17 +20,32 @@ import './styles/Reset.css';
 import './styles/App.css';
 import Header from './Components/Header';
 import MiddleContainer from './Components/MiddleContainer';
+import Piano from './Components/PianoRoll';
 import Mixer from './Components/Mixer';
 
 
 class App extends Component {
 
+    /*
+    constructor(props) {
+        super(props);
+        this.state = {
+            width: 700
+        }
+    }
+
+    setWidth(mid_width) {
+        this.setState({width: mid_width});
+    }*/
+
     render() {
         return (
-         <div id='appContainer'>
-             <Header/>
-             <MiddleContainer/>
-         </div>
+            <div id='appContainer'>
+                <Header/>
+                <MiddleContainer/>
+                <Piano/>
+                <Mixer/>
+            </div>
         );
     }
 }

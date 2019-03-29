@@ -15,8 +15,11 @@ import '../styles/Mixer.css';
 
 
 class Mixer extends Component {
+
     render() {
-        return super.render();
+        return (
+            <div className='mixer'><span style={{fontSize: '3.0rem'}}>Mixer</span></div>
+        );
     }
 }
 
