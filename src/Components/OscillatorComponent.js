@@ -15,9 +15,10 @@ as props to Dial as renderValue().
 
 
 import React, { Component } from 'react';
-import GenericDial from './GenericDial';
 import '../styles/Reset.css';
 import '../styles/Oscillator.css';
+import GenericDial from './GenericDial';
+import OscillatorTypeSelect from './oscillatorTypeSelect';
 
 
 class Oscillator extends Component {
@@ -26,34 +27,61 @@ class Oscillator extends Component {
         super(props);
 
         this.state = {
-            knob1Value: parseInt('0')
+            knob1Value: parseInt('0'),
+            knob2Value: parseInt('0')
         };
 
-        this.renderKnob1Val = this.renderKnob1Val.bind(this);
+        this.getKnob1Val = this.getKnob1Val.bind(this);
+        this.getKnob2Val = this.getKnob2Val.bind(this);
     }
 
-    renderKnob1Val(value) {
+    getKnob1Val(value) {
         this.setState({
             knob1Value: value
+        });
+    }
+
+
+    getKnob2Val(value) {
+        this.setState({
+            knob2Value: value
         });
     }
 
     render() {
         return (
             <div className='oscillator'>
-                <div className='knobSection'>
+                <div className='labels'>
                     <span style={{display: 'block', marginBottom: '.5rem'}}>Frequency</span>
+                    <span style={{display: 'block', marginBottom: '.5rem'}}>Volume</span>
+                </div>
+                <div className='knobSection'>
                     <GenericDial
                         style={{ display: "inline-block" }}
                         min={0}
                         max={100}
-                        width={150}
-                        height={150}
+                        width={200}
+                        height={200}
                         unlockDistance={100}
-                        renderValue={this.renderKnob1Val}
+                        getValue={this.getKnob1Val}
                     />
-                    <span className='knobValue'>{this.state.knob1Value}GHZ</span>
+
+                    <GenericDial
+                        style={{ display: "inline-block" }}
+                        min={0}
+                        max={100}
+                        width={200}
+                        height={200}
+                        unlockDistance={100}
+                        getValue={this.getKnob2Val}
+                    />
                 </div>
+                <div className='knobValues'>
+                    <span className='knobValue'>{this.state.knob1Value} GHZ</span>
+                    <span className='knobValue'>{this.state.knob2Value}</span>
+                </div>
+
+                <OscillatorTypeSelect/>
             </div>
         );
     }

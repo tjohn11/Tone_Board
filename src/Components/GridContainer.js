@@ -40,7 +40,7 @@ class GridContainer extends Component{
 
     return (
         <div id='gridContainer'>
-            <div className='row' style={{height: '160px', margin: '0'}}>
+            <div className='row' style={{height: '180px', margin: '0'}}>
                 {this.renderContent(children)}
             </div>
         </div>
@@ -58,7 +58,7 @@ renderContent(children) {
 renderBlock(i) {
     return (
         <div className='col z-depth-2'
-             style={{height: '100%', width: '160px', padding: '.05rem .05rem', margin: '.25rem .25rem'}}
+             style={{height: '100%', width: '180px', padding: '.05rem .05rem', margin: '.25rem .25rem'}}
              key={i}
         >
             <GridBlock

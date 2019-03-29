@@ -17,6 +17,7 @@ To render dial value to ui pass render function in parent as prop renderValue()
 
 import React, { Component } from 'react';
 import { Knob } from 'react-rotary-knob';
+import {s12} from 'react-rotary-knob-skin-pack';
 import '../styles/Reset.css';
 import '../styles/Dial.css';
 
@@ -35,13 +36,13 @@ class GenericDial extends Component {
         //ignore change if distance is greater than defined
         //here we use a distance of 200 because our max value is 1000
         //change if needed
-        const maxDistance = 300;
+        const maxDistance = 70;
         let distance = Math.abs(val - this.state.value);
         if (distance > maxDistance){}
         else {
             this.setState({ value: val });
-            let { renderValue } = this.props;
-            renderValue(Math.floor(val));
+            let { getValue } = this.props;
+            getValue(Math.floor(val));
         }
     }
     render() {
@@ -52,6 +53,7 @@ class GenericDial extends Component {
                 <Knob value={this.state.value}
                       onChange={this.handleOnChange}
                       style={style}
+                      skin={s12}
                       min={min}
                       max={max}
                       width={width}

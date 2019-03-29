@@ -45,7 +45,6 @@ class GridBlock extends Component {
                     <a
                         className='addGridBlockBtn waves-effect btn'
                         onClick={() => {
-                            this.props.addBlock();
                             this.setState({clicked: true});
                         }}>
                         <i className='large material-icons'>
@@ -109,16 +108,20 @@ class GridBlock extends Component {
 
     //sets grid block state to render oscillator child
     makeOsc() {
+        let { addBlock } = this.props;
         this.setState({
             type: 'osc'
         });
+        addBlock(); //adds new block button
     }
 
     //sets grid block state to render envelope child
     makeEnv() {
+        let { addBlock } = this.props;
         this.setState({
             type: 'env'
         });
+        addBlock(); //adds new block button
     }
 }
 

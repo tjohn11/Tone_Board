@@ -7,8 +7,11 @@ PresetList.css contains component styles for the PianoRoll component.
 See PianoRoll.js for component definition.
 */
 
-
-.ReactPiano__Keyboard {
+@media only screen and (max-width: 600px) {
+    .ReactPiano__Keyboard {
+        width: 800px !important;
+        height: 125px !important;
+    }
 }
 
 .pianoContainer {

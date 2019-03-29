@@ -17,10 +17,10 @@ import '../styles/PianoRoll.css';
 
 const pianoRoll = (props) => {
 
-    const shortcutsExtended = KeyboardShortcuts.BOTTOM_ROW.concat(KeyboardShortcuts.QWERTY_ROW);
+    const shortcutsExtended = KeyboardShortcuts.QWERTY_ROW.concat(KeyboardShortcuts.BOTTOM_ROW);
 
     const firstNote = MidiNumbers.fromNote('c3');
-    const lastNote = MidiNumbers.fromNote('c7');
+    const lastNote = MidiNumbers.fromNote('b5');
     const keyboardShortcuts = KeyboardShortcuts.create({
         firstNote: firstNote,
         lastNote: lastNote,
@@ -38,7 +38,7 @@ const pianoRoll = (props) => {
                 stopNote={(midiNumber) => {
                     // Stop playing a given note - see notes below
                 }}
-                width={1355}
+                width={1215}
                 keyboardShortcuts={keyboardShortcuts}
             />
         </div>

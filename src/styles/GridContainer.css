@@ -30,6 +30,6 @@ See GridContainer.js for component definition.
 
 @media only screen and (max-width: 600px) {
     #gridContainer {
-        width: 50%;
+        width: min-content;
     }
 }
