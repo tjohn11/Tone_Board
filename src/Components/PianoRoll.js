@@ -10,39 +10,54 @@ pianoRolls sits in between the generator board and the mixer.
 
 import React from 'react';
 import { Piano, KeyboardShortcuts, MidiNumbers } from 'react-piano';
+import SoundfontProvider from './SoundFontsDemo';
 import 'react-piano/dist/styles.css';
 import '../styles/PianoRoll.css';
 
+
+const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+const soundfontHostname = 'https://d1pzp51pvbm36p.cloudfront.net';
+
+
 //array structure for assigning keyboard shortcuts to notes
+const firstNote = MidiNumbers.fromNote('c3');
+const lastNote = MidiNumbers.fromNote('b5');
+const shortcutsExtended = KeyboardShortcuts.BOTTOM_ROW.concat(KeyboardShortcuts.QWERTY_ROW);
+const keyboardShortcuts = KeyboardShortcuts.create({
+    firstNote: firstNote,
+    lastNote: lastNote,
+    keyboardConfig: shortcutsExtended,
+});
 
 const pianoRoll = (props) => {
-
-    const shortcutsExtended = KeyboardShortcuts.QWERTY_ROW.concat(KeyboardShortcuts.BOTTOM_ROW);
-
-    const firstNote = MidiNumbers.fromNote('c3');
-    const lastNote = MidiNumbers.fromNote('b5');
-    const keyboardShortcuts = KeyboardShortcuts.create({
-        firstNote: firstNote,
-        lastNote: lastNote,
-        keyboardConfig: shortcutsExtended,
-    });
 
     return (
         <div className='pianoContainer'>
             <span className='keyboardTitle'>Keyboard</span>
-            <Piano
-                noteRange={{ first: firstNote, last: lastNote }}
-                playNote={(midiNumber) => {
-                    // Play a given note - see notes below
-                }}
-                stopNote={(midiNumber) => {
-                    // Stop playing a given note - see notes below
-                }}
-                width={1215}
-                keyboardShortcuts={keyboardShortcuts}
-            />
+            {SoundFontDemoTester()}
         </div>
     )
 };
+
+function SoundFontDemoTester() {
+    return (
+        <SoundfontProvider
+            instrumentName="acoustic_grand_piano"
+            audioContext={audioContext}
+            hostname={soundfontHostname}
+            render={({ isLoading, playNote, stopNote }) => (
+                <Piano
+                    noteRange={{first: firstNote, last: lastNote}}
+                    width={1215}
+                    keyboardShortcuts={keyboardShortcuts}
+                    playNote={playNote}
+                    stopNote={stopNote}
+                    disabled={isLoading}
+                />)}
+        />
+    );
+
+}
+
 
 export default pianoRoll;

@@ -17,6 +17,7 @@ as props to Dial as renderValue().
 import React, { Component } from 'react';
 import '../styles/Reset.css';
 import '../styles/Oscillator.css';
+import * as skins from 'react-rotary-knob-skin-pack';
 import GenericDial from './GenericDial';
 import OscillatorTypeSelect from './oscillatorTypeSelect';
 
@@ -62,7 +63,8 @@ class Oscillator extends Component {
                         max={100}
                         width={200}
                         height={200}
-                        unlockDistance={100}
+                        unlockDistance={50}
+                        skin={skins.s11}
                         getValue={this.getKnob1Val}
                     />
 
@@ -72,7 +74,8 @@ class Oscillator extends Component {
                         max={100}
                         width={200}
                         height={200}
-                        unlockDistance={100}
+                        unlockDistance={50}
+                        skin={skins.s12}
                         getValue={this.getKnob2Val}
                     />
                 </div>

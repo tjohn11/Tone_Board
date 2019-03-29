@@ -17,7 +17,6 @@ To render dial value to ui pass render function in parent as prop renderValue()
 
 import React, { Component } from 'react';
 import { Knob } from 'react-rotary-knob';
-import {s12} from 'react-rotary-knob-skin-pack';
 import '../styles/Reset.css';
 import '../styles/Dial.css';
 
@@ -46,14 +45,14 @@ class GenericDial extends Component {
         }
     }
     render() {
-        let { style, min, max, width, height, unlockDistance} = this.props;
+        let { style, min, max, width, height, unlockDistance, skin} = this.props;
 
         return (
             <div>
                 <Knob value={this.state.value}
                       onChange={this.handleOnChange}
                       style={style}
-                      skin={s12}
+                      skin={skin}
                       min={min}
                       max={max}
                       width={width}
